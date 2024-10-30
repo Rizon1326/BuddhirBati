@@ -1,4 +1,3 @@
-// src/pages/NotificationsPage.jsx
 import React from 'react';
 import { NotificationList } from '../components/notifications/NotificationList';
 import { Layout } from '../components/layout/Layout';

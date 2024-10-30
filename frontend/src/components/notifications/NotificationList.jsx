@@ -1,4 +1,3 @@
-// src/components/notifications/NotificationList.jsx
 import React, { useState, useEffect } from 'react';
 import { NotificationCard } from './NotificationCard';
 import api from '../../utils/axios';

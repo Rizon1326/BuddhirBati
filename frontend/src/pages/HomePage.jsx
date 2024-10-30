@@ -1,4 +1,3 @@
-// src/pages/HomePage.jsx
 import React from 'react';
 import { PostList } from '../components/posts/PostList';
 import { Layout } from '../components/layout/Layout';

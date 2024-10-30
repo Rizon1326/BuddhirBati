@@ -1,4 +1,3 @@
-// src/components/posts/PostList.jsx
 import React, { useState, useEffect } from 'react';
 import { PostCard } from './PostCard';
 import api from '../../utils/axios';
@@ -23,16 +22,11 @@ export const PostList = () => {
     fetchPosts();
   }, []);
 
-  if (loading) {
-    return <div className="text-center">Loading posts...</div>;
-  }
-
-  if (error) {
-    return <div className="text-red-600 text-center">{error}</div>;
-  }
+  if (loading) return <div>Loading posts...</div>;
+  if (error) return <div className="text-red-600">{error}</div>;
 
   return (
-    <div className="space-y-6">
+    <div>
       {posts.map((post) => (
         <PostCard key={post._id} post={post} />
       ))}

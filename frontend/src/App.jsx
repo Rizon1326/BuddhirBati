@@ -1,4 +1,3 @@
-// src/App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
@@ -20,30 +19,9 @@ const App = () => {
         <Routes>
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
-          <Route
-            path="/"
-            element={
-              <PrivateRoute>
-                <HomePage />
-              </PrivateRoute>
-            }
-          />
-          <Route
-            path="/notifications"
-            element={
-              <PrivateRoute>
-                <NotificationsPage />
-              </PrivateRoute>
-            }
-          />
-          <Route
-            path="/create-post"
-            element={
-              <PrivateRoute>
-                <CreatePostPage />
-              </PrivateRoute>
-            }
-          />
+          <Route path="/" element={<PrivateRoute><HomePage /></PrivateRoute>} />
+          <Route path="/notifications" element={<PrivateRoute><NotificationsPage /></PrivateRoute>} />
+          <Route path="/create-post" element={<PrivateRoute><CreatePostPage /></PrivateRoute>} />
         </Routes>
       </Router>
     </AuthProvider>

@@ -10,7 +10,7 @@ export const NotificationList = () => {
   useEffect(() => {
     const fetchNotifications = async () => {
       try {
-        const response = await api.get('/notification');
+        const response = await api.get('http://localhost:5000/notification');
         setNotifications(response.data);
       } catch (err) {
         setError('Failed to fetch notifications');

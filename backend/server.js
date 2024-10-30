@@ -1,12 +1,18 @@
-// server.js
 require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors'); // Import cors
 const authRoutes = require('./routes/authRoutes');
 const postRoutes = require('./routes/postRoutes');
 const notificationRoutes = require('./routes/notificationRoutes');
 
 const app = express();
+
+// Enable CORS for requests from port 5173
+app.use(cors({
+    origin: 'http://localhost:5173',
+}));
+
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI, {

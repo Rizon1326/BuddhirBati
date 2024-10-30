@@ -12,14 +12,14 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const signin = async (email, password) => {
-    const response = await api.post('/auth/signin', { email, password });
+    const response = await api.post('http://localhost:5000/auth/signin', { email, password });
     const { token } = response.data;
     localStorage.setItem('token', token);
     setUser({ token });
   };
 
   const signup = async (email, password) => {
-    const response = await api.post('/auth/signup', { email, password });
+    const response = await api.post('http://localhost:5000/auth/signup', { email, password });
     const { token } = response.data;
     localStorage.setItem('token', token);
     setUser({ token });

@@ -5,7 +5,7 @@ import { formatDistanceToNow } from 'date-fns';
 export const NotificationCard = ({ notification }) => {
   return (
     <Link
-      to={`/post/${notification.postId}`}
+      to={`http://localhost:5000/post/${notification.postId}`}
       className="block bg-white shadow rounded-lg p-4 hover:bg-gray-50 transition-colors duration-150"
     >
       <div className="flex items-center justify-between">

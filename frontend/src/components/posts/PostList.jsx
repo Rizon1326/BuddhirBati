@@ -10,7 +10,7 @@ export const PostList = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await api.get('/post');
+        const response = await api.get('http://localhost:5000/post');
         setPosts(response.data);
       } catch (err) {
         setError('Failed to fetch posts');

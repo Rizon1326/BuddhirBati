@@ -55,7 +55,7 @@ BUDDHIR_BATI/
 │   ├── postcss.config.js     # PostCSS configuration 🛠️
 │   ├── README.md             # Project documentation 📖
 ```
-
+---
 # Installation 🛠️
 
 Follow these steps to set up the project locally:
@@ -67,16 +67,15 @@ Follow these steps to set up the project locally:
 - **MinIO** (configured and running)
 
 ---
-
+---
 ## Steps 🔧
 
 ### Clone the Repository:
-```bash
+
 git clone https://github.com/Rizon1326/BuddhirBati.git
 cd BuddhirBati
 Here’s the markdown with icons and headers for better readability:
 
-```markdown
 # Installation 🛠️
 
 Follow these steps to set up the project locally:
@@ -121,7 +120,6 @@ npm install
 
 #### Create `.env` Files:
 - Add a `.env` file in the **backend** folder:
-```env
 ```env
 # MongoDB Configuration
 MONGO_URI=mongodb+srv://<username>:<password>@cluster0.<region>.mongodb.net/<databaseName>?retryWrites=true&w=majority&appName=<appName>

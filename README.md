@@ -210,12 +210,13 @@ Once the application is installed and running, follow these steps:
 - Implement a **reputation system** for users 🏆.  
 - Add a **rich-text editor** for better question and answer formatting 📝.  
 
----
-Hello 👋
----
 
 ## Contributors 🤝
 
 - **Your Name** - [GitHub Profile](https://github.com/Rizon1326)
+```
+
+Hello 👋
+
 ```
 

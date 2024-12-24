@@ -211,6 +211,7 @@ Once the application is installed and running, follow these steps:
 - Add a **rich-text editor** for better question and answer formatting 📝.  
 
 ---
+Hello 👋
 ---
 
 ## Contributors 🤝
